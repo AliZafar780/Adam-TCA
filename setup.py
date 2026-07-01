@@ -15,8 +15,11 @@ def read_readme() -> str:
 
 setup(
     name="adam-tca",
-    version="0.1.0",
-    description="Adam-TCA: Taylor-Centric Adam Optimizer with Curvature-Aware Learning Rate Modulation",
+    version="0.2.0",
+    description=(
+        "Adam-TCA: Curvature-Aware Adam Optimizer with "
+        "Cosine-Similarity and Variance-Based Learning Rate Modulation"
+    ),
     long_description=read_readme(),
     long_description_content_type="text/markdown",
     author="Ali Zafar",
@@ -50,5 +53,8 @@ setup(
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
-    keywords="pytorch optimizer adam differential-geometry curvature deep-learning transformer",
+    keywords=(
+        "pytorch optimizer adam curvature cosine-similarity "
+        "gradient-variance deep-learning transformer"
+    ),
 )
